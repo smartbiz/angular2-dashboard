@@ -1,0 +1,27 @@
+{
+  "name": "angular2-dashboard",
+  "version": "1.0.1",
+  "description": "Angular2 Admin Dashboard Template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://SmartBiz@github.com/smartbiz/angular2-dashboard.git"
+  },
+  "keywords": [
+    "Angular2",
+    "Angular2 Dashboard",
+    "Angular2 Admin Dashboard",
+    "Angular2 Admin Dashboard Template",
+    "Dashboard",
+    "Admin Dashboard",
+    "Admin Dashboard Template"
+  ],
+  "scripts": {
+    "test": "gulp test --color"
+  },
+  "author": "Sun.SmartBiz@gmail.com <smartbiz>",
+  "license": "ISC OR GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/smartbiz/angular2-dashboard/issues"
+  },
+  "homepage": "https://github.com/smartbiz/angular2-dashboard#readme"
+}
