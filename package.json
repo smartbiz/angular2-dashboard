@@ -1,25 +1,40 @@
 {
   "name": "angular2-dashboard",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Angular2 Admin Dashboard Template",
   "repository": {
     "type": "git",
     "url": "git+https://SmartBiz@github.com/smartbiz/angular2-dashboard.git"
   },
   "keywords": [
-    "Angular2",
-    "Angular2 Dashboard",
-    "Angular2 Admin Dashboard",
-    "Angular2 Admin Dashboard Template",
-    "Dashboard",
-    "Admin Dashboard",
-    "Admin Dashboard Template"
+    "Angular2", "Angular2 Dashboard", "Angular2 Admin Dashboard", "Angular2 Admin Dashboard Template", "Dashboard", "Admin Dashboard", "Admin Dashboard Template"
   ],
   "scripts": {
-    "test": "gulp test --color"
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "docker-build": "docker build -t ng2-quickstart .",
+    "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 ng2-quickstart",
+    "postinstall": "typings install"
   },
   "author": "Sun.SmartBiz@gmail.com <smartbiz>",
   "license": "ISC OR GPL-3.0",
+  "dependencies": {
+    "angular2": "2.0.0-beta.13",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.25",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.1.0",
+    "typescript": "^1.8.9",
+    "typings":"^0.7.11"
+  },
   "bugs": {
     "url": "https://github.com/smartbiz/angular2-dashboard/issues"
   },
