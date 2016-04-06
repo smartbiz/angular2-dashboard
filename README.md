@@ -1,7 +1,7 @@
 # Angular2 Dashboard
 
 [![Build Status](https://travis-ci.org/smartbiz/angular2-dashboard.svg?branch=master)](https://travis-ci.org/smartbiz/angular2-dashboard)
-[![Build Status](https://ci.appveyor.com/project/smartbiz/angular2-dashboard?svg=true)](https://ci.appveyor.com/project/smartbiz/angular2-dashboard)
+[![Build Status](https://ci.appveyor.com/api/projects/status/r90jkjxm0truk21a/branch/master?svg=true)](https://ci.appveyor.com/project/smartbiz/angular2-dashboard)
 [![GPLv3+ License](https://img.shields.io/badge/license-GPLv3+-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![Join the chat at https://gitter.im/smartbiz/angular2-dashboard](https://badges.gitter.im/smartbiz/angular2-dashboard.svg)](https://gitter.im/smartbiz/angular2-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -11,7 +11,7 @@
 
 1. [Node.js](http://nodejs.org) and npm installed. I recommend using [nvm](https://github.com/creationix/nvm). I used nvm v0.31.0, node v4.4.2 & npm 2.14.7
 
-```
+```bash
   xcode-select --install
   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
   nvm install 4.2.2
@@ -19,22 +19,24 @@
 
 1. Install ts-node for TypeScript:
 
-```
+```bash
   npm install -g ts-node
 ```
 
 1. [Git](http://git-scm.com "Git distributed version control system") installed. I recommend using [SourceTree](https://www.sourcetreeapp.com)
-```
+```bash
   git clone --depth 1 https://github.com/smartbiz/angular2-dashboard.git
 ```
 
 1. Install the project's dependencies:
-```
+```bash
   cd angular2-dashboard
+  
   # install the project's dependencies
   npm install
   # watches your files and uses livereload by default
   npm start
+  
   # api document for the app
   npm run docs
 
@@ -66,14 +68,14 @@
 ├── LICENSE
 ├── README.md
 ├── package.json               <= dependencies of the project
-├── gulpfile.ts                <- configuration of the gulp tasks
+├── gulpfile.ts                <= configuration of the gulp tasks
 ├── karma.conf.js              <- configuration of the test runner
 ├── protractor.conf.js         <- e2e tests configuration
 ├── src                        <- source code of the application
 │   ├── index.html             <= 
+│   ├── main.ts
 │   ├── home
 │   │   └── components
-│   ├── main.ts
 │   ├── shared
 │   │   └── services
 │   │       ├── name-list...
@@ -114,8 +116,7 @@
 │   └── utils.ts
 ├── tsconfig.json              <- configuration of the typescript project (ts-node, which runs the tasks defined in gulpfile.ts)
 ├── tslint.json                <- tslint configuration
-├── typings                    <- typings directory. Contains all the external typing definitions defined with typings
-├── typings.json
+├── typings.json               <= typings directory. Contains all the external typing definitions defined with typings
 ├── .travis.yml                <= https://travis-ci.org/smartbiz
 └── appveyor.yml               <= https://ci.appveyor.com/project/smartbiz
 ```
