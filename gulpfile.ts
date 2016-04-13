@@ -6,18 +6,19 @@ import {SEED_TASKS_DIR, PROJECT_TASKS_DIR} from './tools/config';
 loadTasks(SEED_TASKS_DIR);
 loadTasks(PROJECT_TASKS_DIR);
 
-
 // --------------
 // Build dev.
 gulp.task('build.dev', (done: any) =>
   runSequence('clean.dev',
-              'tslint',
-              'css-lint',
-              'build.assets.dev',
-              'build.html_css',
-              'build.js.dev',
-              'build.index.dev',
-              done));
+    'tslint',
+    // 'css-lint', // the old css task we no longer need
+    'scss-lint', // the task we created
+    'build.assets.dev',
+    // 'build.html_css', // the old css task we no longer need
+    'build.html_scss', // the task we created
+    'build.js.dev',
+    'build.index.dev',
+    done));
 
 // --------------
 // Build dev watch.
@@ -40,16 +41,18 @@ gulp.task('build.e2e', (done: any) =>
 // Build prod.
 gulp.task('build.prod', (done: any) =>
   runSequence('clean.prod',
-              'tslint',
-              'css-lint',
-              'build.assets.prod',
-              'build.html_css',
-              'copy.js.prod',
-              'build.js.prod',
-              'build.bundles',
-              'build.bundles.app',
-              'build.index.prod',
-              done));
+    'tslint',
+    // 'css-lint', // the old css task we no longer need
+    'scss-lint', // the task we created
+    'build.assets.prod',
+    // 'build.html_css', // the old css task we no longer need
+    'build.html_scss', // the task we created
+    'copy.js.prod',
+    'build.js.prod',
+    'build.bundles',
+    'build.bundles.app',
+    'build.index.prod',
+    done));
 
 // --------------
 // Build test.

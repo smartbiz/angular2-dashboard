@@ -1,0 +1,43 @@
+@import "../../assets/colors";
+
+:host {
+  display: block;
+  padding: 0 1em;
+}
+
+.items {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 30em;
+}
+.items li {
+  font-size: small;
+  background-color: #eee;
+}
+.items li:hover {
+  color: md-color($app-blue, 400) !important; /* #607D8B */
+  background-color: #ddd;
+  left: 0.1em;
+}
+.items .text {
+  position: relative;
+  top: -3px;
+}
+
+.items .badge {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em;
+  cursor: pointer;
+  color: $app-text-color-light;
+  background-color: md-color($app-blue, 500);
+}
+.items .badge:hover {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em;
+  cursor: pointer;
+  color: $app-text-color-light;
+  background-color: md-color($app-blue, 400);
+}

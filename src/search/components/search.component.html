@@ -1,0 +1,47 @@
+<!--<h2>-->
+  <form>
+    <input  type="search" autofocus placeholder="Search..." [(ngModel)]="query" (keyup.enter)="search()">
+    <button type="button" (click)="search()">Search</button>
+  </form>
+<!--</h2>-->
+
+<div *ngIf="loading">Loading...</div>
+
+<!--<pre>{{searchResults | json}}</pre>-->
+<!--
+<table *ngIf="searchResults">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Icon</th>
+    <th>State</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="#menu of searchResults; #i=index">
+    <td><a [routerLink]="['Edit', { name: menu.name }]">{{menu.name}}</a></td>
+    <td>{{menu.icon}}</td>
+    <td>{{menu.state}}, {{menu.badge}}, {{menu.type}}
+    </td>
+  </tr>
+  </tbody>
+</table>
+-->
+
+<div *ngIf="searchResults">
+  <ul class="items">
+    <li *ngFor="#item of searchResults; #i=index">
+<!--
+        [class.selected]="hero === selectedHero"
+        (click)="onSelect(hero)">
+-->
+      <a [routerLink]="['Edit', { name: item.name }]"><span class="badge">{{i}}. {{item.name}}</span></a> {{item.state}}, {{item.badge}}, {{item.type}}
+    </li>
+  </ul>
+<!--
+  <div *ngIf="selectedItem">
+    <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+-->
+</div>

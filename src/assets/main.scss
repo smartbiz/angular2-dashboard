@@ -1,3 +1,6 @@
+@import "variables";
+@import "colors";
+
 /* Reset */
 html,
 body,
@@ -14,8 +17,8 @@ div {
 
 /* Set up a default font and some padding to provide breathing room */
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-family: $md-font-family;
+  font-size: $md-body-font-size-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,41 +26,43 @@ body {
 p {
   font-weight: 400;
   letter-spacing: 0.01em;
-  line-height: 20px;
+  line-height: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
 ul {
-  margin: 10px 0 0 0;
-  padding: 0 0 0 20px;
+  margin: 0.5em 0 0 0;
+  padding: 0 0 0 1em;
 }
 
 li {
-  font-weight: 400;
-  margin-top: 4px;
+  margin-top: 0.5em;
+}
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: 0.5em 0;
+  color: #106cc8;
 }
 
 input {
-  border: 1px solid #106cc8;
-  font-size: 14px;
-  height: 40px;
-  outline: none;
-  padding: 8px;
+  border: 1px solid md-color($app-blue, 500);
+  height: 2em;
+  font-size: 1em;
 }
 
 button {
-  background-color: #106cc8;
+  background-color: md-color($app-blue, 500);
   border-style: none;
   color: rgba(255, 255, 255, 0.87);
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
-  height: 40px;
-  padding: 8px 18px;
-  text-decoration: none;
+  height: 2em;
+  font-size: 1em;
 }
 
 button:hover {
-  background-color: #28739e;
+  background-color: md-color($app-blue, 400);
 }

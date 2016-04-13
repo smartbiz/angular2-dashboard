@@ -1,0 +1,26 @@
+@import "../../assets/colors";
+
+:host {
+  background-color: md-color($app-blue, 500);
+  color: $app-text-color-light;
+  display: block;
+  height: 3em;
+  padding: 0 1em;
+}
+
+h1 {
+  display: inline;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 0.1px;
+  line-height: 2.2em;
+  margin: 0;
+}
+
+more {
+  background: url("./assets/svg/more.svg");
+  float: right;
+  height: 1.5em;
+  margin-top: 0.75em;
+  width: 1.5em;
+}

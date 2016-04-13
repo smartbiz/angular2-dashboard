@@ -1,0 +1,88 @@
+ [
+    {
+      "name": "Todo",
+      "icon": "menu_todo",
+      "badge": "20",
+      "state": "workforce.todo",
+      "type": "link"
+    }, {
+      "name": "Training",
+      "icon": "chat",
+      "badge": "99+",
+      "state": "workforce.training",
+      "type": "link"
+    }, {
+      "name": "Collaboration",
+      "icon": "cal",
+      "badge": "8",
+      "state": "workforce.collaboration",
+      "type": "link"
+    }, {
+      "name": "MCP",
+      "icon": "menu_map",
+      "badge": "10",
+      "state": "workforce.mcp",
+      "type": "link"
+    }, {
+      "name": "Discipline",
+      "icon": "flag",
+      "badge": "20",
+      "state": "workforce.discipline",
+      "type": "link"
+    }, {
+      "name": "Sales Performance",
+      "icon": "tab_myperformance",
+      "badge": "20",
+      "state": "dashboard.salesperformance",
+      "type": "link"
+    }, {
+      "name": "Sales Contribution",
+      "icon": "tab_salescontribution",
+      "badge": "30",
+      "state": "dashboard.salescontribution",
+      "type": "link"
+    }, {
+      "name": "Promotion",
+      "icon": "tab_promotion",
+      "badge": "30",
+      "moduleName": "Sales Dashboard",
+      "state": "dashboard.promotion",
+      "type": "link"
+    }, {
+      "name": "Top Salesman",
+      "icon": "salesman",
+      "badge": "30",
+      "state": "dashboard.topsalesman",
+      "type": "link"
+    }, {
+      "name": "Top Sales",
+      "icon": "tab_topsales",
+      "badge": "10",
+      "state": "dashboard.topsales",
+      "type": "link"
+    }, {
+      "name": "Inventory Highstock",
+      "icon": "tab_highstock",
+      "badge": "20",
+      "state": "dashboard.inventoryhighstock",
+      "type": "link"
+    }, {
+      "name": "Expired",
+      "icon": "tab_expired",
+      "badge": "10",
+      "state": "dashboard.expired",
+      "type": "link"
+    }, {
+      "name": "Near Expired",
+      "icon": "tab_near_expired",
+      "badge": "20",
+      "state": "dashboard.nearexpired",
+      "type": "link"
+    }, {
+      "name": "SLOB",
+      "icon": "tab_slob",
+      "badge": "20",
+      "state": "dashboard.slob",
+      "type": "link"
+    }
+ ]

@@ -48,9 +48,41 @@
 
 # Main features
 
+## Version 1.0.1, 1.0.2, 1.0.3
 
-# Changelog
-## Version 1.0
+- SASS & *.scss support
+- Icon Fonts: icomoon_free, font_awesome
+- ng2-bootstrap-1.0.11
+.
+├── gulpfile.ts
+├── tools
+│   ├── tasks                  <- gulp tasks
+│   │   ├── project            <- project specific gulp tasks
+│   │   │   ├── build.html_scss.ts
+│   │   │   ├── build.index.dev.ts
+│   │   │   └── scss-lint.ts
+│   └── config
+│       └── project.config.ts  <- configuration of the specific project
+├── src
+│   ├── assets
+│   │   ├── _variables.scss
+│   │   ├── _colors.scss
+│   │   └── main.scss
+│   ├── app
+│   │   └── components
+│   │       ├── navbar.component.scss
+│   │       └── toolbar.component.scss
+│   ├── about
+│   │   └── components
+│   │       └── about.component.scss
+│   ├── home
+│   │   └── components
+│   │       └── home.component.scss
+│   ├── search
+│   │   └── components
+│   │       └── search.component.scss
+
+## Version 1.0.0
 - Ready to go, statically typed build system using gulp for working with TypeScript.
 - Production and development builds.
 - Sample unit tests with Jasmine and Karma.
@@ -60,6 +92,19 @@
 - Following the [best practices for your application’s structure](https://github.com/mgechev/angular2-style-guide).
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
 - Basic Service Worker, which implements "Cache then network strategy".
+.
+├── src
+│   ├── main.ts 
+│   ├── app
+│   │   └── components
+│   │       └── app.component.ts
+│   ├── search
+│   │   └── *.*
+│   ├── shared
+│   │   ├── services
+│   │   │   └── search.service.ts
+│   │   └── data
+│   │       └── menu.json
 
 ### Directory Structure
 
@@ -67,25 +112,25 @@
 .
 ├── LICENSE
 ├── README.md
-├── package.json               <= dependencies of the project
-├── gulpfile.ts                <= configuration of the gulp tasks
+├── gulpfile.ts                <- configuration of the gulp tasks
 ├── karma.conf.js              <- configuration of the test runner
+├── package.json               <- dependencies of the project
 ├── protractor.conf.js         <- e2e tests configuration
 ├── src                        <- source code of the application
-│   ├── index.html             <= 
-│   ├── main.ts
 │   ├── home
 │   │   └── components
+│   ├── index.html
+│   ├── main.ts                <= 
 │   ├── shared
 │   │   └── services
 │   │       ├── name-list...
 │   │       └── name-list...
-│   └── sw.js                  <= Service Worker - static cache
+│   └── sw.js                  <- sample service worker
 ├── test-main.js               <- testing configuration
 ├── tools
 │   ├── README.md              <- build documentation
 │   ├── config
-│   │   ├── project.config.ts  <- configuration of the specific project
+│   │   ├── project.config.ts  <= configuration of the specific project
 │   │   ├── seed.config....
 │   │   └── seed.config.ts     <- generic configuration of the seed project
 │   ├── config.ts              <- exported configuration (merge both seed.config and project.config, project.config overrides seed.config)
@@ -116,7 +161,7 @@
 │   └── utils.ts
 ├── tsconfig.json              <- configuration of the typescript project (ts-node, which runs the tasks defined in gulpfile.ts)
 ├── tslint.json                <- tslint configuration
-├── typings.json               <= typings directory. Contains all the external typing definitions defined with typings
-├── .travis.yml                <= https://travis-ci.org/smartbiz
-└── appveyor.yml               <= https://ci.appveyor.com/project/smartbiz
+├── typings                    <- typings directory. Contains all the external typing definitions defined with typings
+├── typings.json
+└── appveyor.yml
 ```

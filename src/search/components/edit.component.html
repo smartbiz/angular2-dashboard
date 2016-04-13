@@ -1,0 +1,21 @@
+<div *ngIf="menu">
+    <h3>{{editName}} Menu-Item</h3>
+    <div>
+        <label>Name</label>
+        <input [(ngModel)]="editName" id="name" placeholder="Name"/>
+    </div>
+    <div>
+        <label>Icon</label>
+        <input [(ngModel)]="editIcon" id="icon" placeholder="Icon"/>
+    </div>
+    <div>
+        <label>Badge</label>
+        <input [(ngModel)]="editBadge" id="badge" placeholder="Badge"/>
+    </div>
+    <div>
+        <label>State</label>
+        <input [(ngModel)]="editState" id="state" placeholder="State"/>
+    </div>
+    <button (click)="save()" id="save">Save</button>
+    <button (click)="cancel()" id="cancel">Cancel</button>
+</div>
