@@ -7,7 +7,7 @@
 
 > Build a Mobile App for your WordPress based business using Angular 2.
 
-# Development Environment
+## 1. Development Environment
 
 1. [Node.js](http://nodejs.org) and npm installed. I recommend using [nvm](https://github.com/creationix/nvm). I used nvm v0.31.0, node v4.4.2 & npm 2.14.7
 
@@ -46,13 +46,14 @@
   npm run build.prod
 ```
 
-# Main features
+## 2. Main Features
 
-## Version 1.0.1, 1.0.2, 1.0.3
+### Version 1.0.1, 1.0.2, 1.0.3
 
 - SASS & *.scss support
 - Icon Fonts: icomoon_free, font_awesome
 - ng2-bootstrap-1.0.11
+
 .
 ├── gulpfile.ts
 ├── tools
@@ -82,7 +83,7 @@
 │   │   └── components
 │   │       └── search.component.scss
 
-## Version 1.0.0
+### Version 1.0.0
 - Ready to go, statically typed build system using gulp for working with TypeScript.
 - Production and development builds.
 - Sample unit tests with Jasmine and Karma.
@@ -92,6 +93,7 @@
 - Following the [best practices for your application’s structure](https://github.com/mgechev/angular2-style-guide).
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
 - Basic Service Worker, which implements "Cache then network strategy".
+
 .
 ├── src
 │   ├── main.ts 
@@ -106,7 +108,7 @@
 │   │   └── data
 │   │       └── menu.json
 
-### Directory Structure
+## 3. Directory Structure
 
 ```
 .
