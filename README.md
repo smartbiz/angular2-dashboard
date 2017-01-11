@@ -5,7 +5,7 @@
 [![GPLv3+ License](https://img.shields.io/badge/license-GPLv3+-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![Join the chat at https://gitter.im/smartbiz/angular2-dashboard](https://badges.gitter.im/smartbiz/angular2-dashboard.svg)](https://gitter.im/smartbiz/angular2-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> Build a Mobile App for your WordPress based business using Angular 2.
+> Build a Mobile App for your business using Angular 2.
 
 ## 1. Development Environment
 
