@@ -9,7 +9,7 @@
 
 ## 1. Development Environment
 
-1. [Node.js](http://nodejs.org) and npm installed. I recommend using [nvm](https://github.com/creationix/nvm). I used nvm v0.31.0, node v4.4.2 & npm 2.14.7
+> [Node.js](http://nodejs.org) and npm installed. I recommend using [nvm](https://github.com/creationix/nvm). I used nvm v0.31.0, node v4.4.2 & npm 2.14.7
 
 ```bash
   xcode-select --install
@@ -17,18 +17,18 @@
   nvm install 4.2.2
 ```
 
-1. Install ts-node for TypeScript:
+> Install ts-node for TypeScript:
 
 ```bash
   npm install -g ts-node
 ```
 
-1. [Git](http://git-scm.com "Git distributed version control system") installed. I recommend using [SourceTree](https://www.sourcetreeapp.com)
+> [Git](http://git-scm.com "Git distributed version control system") installed. I recommend using [SourceTree](https://www.sourcetreeapp.com)
 ```bash
   git clone --depth 1 https://github.com/smartbiz/angular2-dashboard.git
 ```
 
-1. Install the project's dependencies:
+> Install the project's dependencies:
 ```bash
   cd angular2-dashboard
   
