@@ -29,7 +29,8 @@
 ```
 
 > Install the project's dependencies:
-```bash
+
+```
   cd angular2-dashboard
   
   # install the project's dependencies
@@ -54,6 +55,7 @@
 - Icon Fonts: icomoon_free, font_awesome
 - ng2-bootstrap-1.0.11
 
+```
 .
 ├── gulpfile.ts
 ├── tools
@@ -82,6 +84,7 @@
 │   ├── search
 │   │   └── components
 │   │       └── search.component.scss
+```
 
 ### Version 1.0.0
 - Ready to go, statically typed build system using gulp for working with TypeScript.
@@ -94,6 +97,7 @@
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
 - Basic Service Worker, which implements "Cache then network strategy".
 
+```
 .
 ├── src
 │   ├── main.ts 
@@ -107,11 +111,11 @@
 │   │   │   └── search.service.ts
 │   │   └── data
 │   │       └── menu.json
+```
 
 ## 3. Directory Structure
 
 ```
-
 .
 ├── LICENSE
 ├── README.md
